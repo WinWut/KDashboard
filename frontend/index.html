@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IoT Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <div class="icon"><img src="imgs\K-BONtransparent.png" alt="kbon logo"></div>
+                <div>
+                    <h2>Kbon</h2>
+                    <p>Control Center</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <p class="section-title">Monitor</p>
+                <div class="monitor">
+                <ul>
+                    <li class="active">Overview</li>
+                    <li>Live Data</li>
+                    <li>Logs</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <p class="section-title">Manage</p>
+                <ul>
+                    <li>Devices</li>
+                    <li>User</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="dashboard">
+
+            <div class="topbar">
+                    <h2>Overview</h2>
+                    <div class="status">
+                        <span class="dot"></span>
+                        Broker Connected
+                    </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>EC</h3>
+                    <p id="temp">-- Uq</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Relay</h3>
+                    <p id="relay">OFF</p>
+                </div>
+
+                <div class="card">
+                    <h3>pH</h3>
+                    <p id="ph">0.00</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

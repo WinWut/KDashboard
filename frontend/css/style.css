@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background : #2b2b2b;
+    color : white;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:260px;
+    height:100vh;
+
+    background:linear-gradient(180deg, #2b2b2b, #1f1f1f);
+    color:#ddd;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+    border-right:1px solid rgba(255,255,255,0.3);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.logo .icon{
+    background: #ffffff;
+    padding:10px;
+    border-radius:10px;
+    margin-right:10px;
+}
+.logo img{
+    width:50px
+}
+
+.logo h2{
+    margin: 0;
+    font-size:18px;
+}
+
+.logo p{
+    margin:0;
+    font-size:12px;
+    color:#aaa;
+}
+
+.section-title{
+    font-size:12px;
+    color:#888;
+    margin:20px 0 10px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    
+    padding:10px 12px;
+    border-radius:10px;
+    margin-bottom:8px;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.sidebar li:hover{
+    background:#333;
+
+}
+
+.sidebar li.active{
+    background:#dbeafe;
+    color:#1e3a8a;
+    font-weight:bold;
+}
+
+.container{
+    display:flex;
+
+}
+
+.dashboard{
+    flex:1;
+    padding:20px;
+    margin-left:260px;
+}
+
+.topbar{
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin:-30px 0px 25px -30px;
+  
+    width:100%;
+    padding: 10px 30px;
+
+    background: #242323;
+    
+    border-bottom:1px solid rgba(255,255,255,0.3);
+}
+
+
+
+.status{
+    display:flex;
+    align-items:center;
+    font-size:14px;
+    color:#9ca3af;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    background:#22c55e;
+    border-radius:50%;
+    margin-right:6px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card{
+    min-height:100px;
+    background:#1f1f1f;
+    padding:20px;
+
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
