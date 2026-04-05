@@ -1,3 +1,5 @@
+#uvicorn app.main:app --reload
+#http://127.0.0.1:8000/data to test API
 from fastapi import FastAPI
 from app.state import data
 from app.mqtt_client import start_mqtt

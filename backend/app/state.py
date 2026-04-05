@@ -1,5 +1,7 @@
 data = {
     "ph": 0,
     "ec":0,
-    "relay": "OFF"
+    "airtemp":0,
+    "watertemp":0,
+    "humidity":0,
 }
